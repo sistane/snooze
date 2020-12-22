@@ -1,0 +1,25 @@
+
+
+.card{
+    height:50px;
+    width: 50px;
+    background-image: url('src\assets\kllk.png');
+    /* background-color: aqua ; */
+}
+
+.cardspacing{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cardheightspacinghome
+{
+    height: 100%;
+    align-items: center;
+}
+.card1
+{   height:60px;
+    width: 60px;
+    background-image: url('src\assets\kllk.png');
+}

@@ -1,0 +1,15 @@
+.toolbar
+{
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+}
+.aligned-with-icon-relative{
+    position: relative;
+    top: -5px;
+    margin-left: 5px; /* optional */
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  }
