@@ -4,12 +4,12 @@
     background-color: rgb(185, 14, 134)}
 
     .mat-grid-tile {
-        border: solid 2px #000;
+        /* border: solid 2px #000; */
         border-radius: 30px;
         background-color: black;
-        background-image: url('src\assets\kllk.png');
+        /* background-image: url('src\assets\kllk.png'); */
         margin-right: 1rem;
-    margin-left: 1rem;
+        margin-left: 1rem;
     }
 
     .tile-image

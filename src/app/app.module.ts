@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,8 +17,7 @@ import { ResourcesComponent } from './resources/resources.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    JournalComponent,
-    ResourcesComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -28,9 +27,9 @@ import { ResourcesComponent } from './resources/resources.component';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatGridListModule,
+    MatGridListModule, 
          
-  ],
+  ], 
   providers: [],
   bootstrap: [AppComponent]
 })

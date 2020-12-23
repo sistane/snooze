@@ -11,7 +11,7 @@ export class AppComponent {
 
   constructor(private navRouter: Router) { }
   navtoJournal(){
-    this.navRouter.navigateByUrl('app/journal')
+    this.navRouter.navigateByUrl('journal')
   }
   
 }

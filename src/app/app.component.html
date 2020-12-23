@@ -1,22 +1,48 @@
 <!-- <app-home></app-home> -->
-<app-journal></app-journal>
+<!-- <app-journal></app-journal> -->
 <mat-toolbar class="toolbar">
-    <button mat-icon-button class="example-icon" aria-label="home">
-        <mat-icon>home</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon favorite-icon" (click)="navtoJournal()" aria-label="bedtime">
-        <mat-icon>bedtime</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="alarm">
-        <mat-icon>alarm</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Resources">
-        <mat-icon>library_music</mat-icon>
-    </button>
-    <div class= "flex-container">
-        <button mat-icon-button class= "flex-container"aria-label="settigns">
-            <mat-icon>settings</mat-icon>
-            <span>set</span>
-        </button>
-    </div>
+    <a routerLink="/home">
+        <div class="flex-container">
+            <button mat-icon-button aria-label="home">
+                <mat-icon>home</mat-icon>
+                    </button>
+            <span>Home</span>
+        </div>
+    </a>
+    <a routerLink="/journal">
+        <div class="flex-container">
+            <button mat-icon-button aria-label="Journal">
+                <mat-icon>bedtime</mat-icon>
+                    </button>
+            <span>Journal</span>
+       </div>
+    </a>
+    <a routerLink="/">
+        <div class="flex-container">
+            <button mat-icon-button aria-label="Alarm">
+                <mat-icon>alarm</mat-icon>
+                    </button>
+            <span>Alarm</span>
+        </div>
+    </a>
+
+    <a routerLink="/resources">
+        <div class="flex-container">
+            <button mat-icon-button aria-label="Resources">
+                <mat-icon>library_music</mat-icon>
+                    </button>
+            <span>Resources</span>
+        </div>
+    </a>
+    <a routerLink="">
+        <div class= "flex-container">
+            <button mat-icon-button aria-label="settigns">
+                <mat-icon>settings</mat-icon>
+            </button>
+            <span>Settings</span>
+        </div>  
+    </a>
+
+   
 </mat-toolbar>
+<router-outlet></router-outlet>
