@@ -8,8 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
   }
 
+  prev() {
+    document.getElementById('slider-container').scrollLeft -= 270;
+  }
+
+  next() {
+    document.getElementById('slider-container').scrollLeft += 270;
+  }
+
+
+  // $(".slide img").on("click" , function(){
+  // 	$(this).toggleClass('zoomed');
+  // 	$(".overlay").toggleClass('active');
+  // })
+
 }
+

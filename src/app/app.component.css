@@ -1,8 +1,9 @@
 .toolbar
 {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     justify-content: space-between;
+    z-index: 10;
 }
 .aligned-with-icon-relative{
     vertical-align: top;

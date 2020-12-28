@@ -1,5 +1,6 @@
 <!-- <app-home></app-home> -->
 <!-- <app-journal></app-journal> -->
+<router-outlet></router-outlet>
 <mat-toolbar class="toolbar">
     <a routerLink="/home">
         <div class="flex-container">
@@ -17,7 +18,7 @@
             <span>Journal</span>
        </div>
     </a>
-    <a routerLink="/">
+    <a routerLink="/alarm">
         <div class="flex-container">
             <button mat-icon-button aria-label="Alarm">
                 <mat-icon>alarm</mat-icon>
@@ -34,7 +35,7 @@
             <span>Resources</span>
         </div>
     </a>
-    <a routerLink="">
+    <a routerLink="/settings">
         <div class= "flex-container">
             <button mat-icon-button aria-label="settigns">
                 <mat-icon>settings</mat-icon>
@@ -45,4 +46,3 @@
 
    
 </mat-toolbar>
-<router-outlet></router-outlet>

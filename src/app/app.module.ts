@@ -11,13 +11,20 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from'@angular/material/grid-list';
 import { JournalComponent } from './journal/journal.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AlarmComponent } from './alarm/alarm.component';
+import { SettingsComponent } from './settings/settings.component';
+// import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    routingComponents
+    routingComponents,
+    AlarmComponent,
+    SettingsComponent,
+    // IvyCarouselModule
   ],
   imports: [
     BrowserModule,
@@ -27,7 +34,8 @@ import { ResourcesComponent } from './resources/resources.component';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatGridListModule, 
+    MatGridListModule,
+    NgbModule, 
          
   ], 
   providers: [],
