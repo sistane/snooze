@@ -1,6 +1,6 @@
 .toolbar
 {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     justify-content: space-between;
     z-index: 10;
@@ -18,4 +18,12 @@
   }
   .flex-container > span {
     font-size: 10px;
+  }
+
+  .background
+  {
+    height: 100%;
+       /* background-image:linear-gradient(red, #f06d06); */
+       background-image:linear-gradient(#635cb1, #8899DA);
+    
   }

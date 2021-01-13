@@ -14,7 +14,14 @@ import { ResourcesComponent } from './resources/resources.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AlarmComponent } from './alarm/alarm.component';
 import { SettingsComponent } from './settings/settings.component';
-// import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
+import { AlarmCardComponent } from './alarm/alarm-card/alarm-card.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+
+
+
 
 
 @NgModule({
@@ -24,7 +31,8 @@ import { SettingsComponent } from './settings/settings.component';
     routingComponents,
     AlarmComponent,
     SettingsComponent,
-    // IvyCarouselModule
+    AlarmCardComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -36,6 +44,11 @@ import { SettingsComponent } from './settings/settings.component';
     MatCardModule,
     MatGridListModule,
     NgbModule, 
+    FormsModule, 
+    ChartsModule,
+    MatSlideToggleModule,
+    NgxMaterialTimepickerModule,
+    
          
   ], 
   providers: [],

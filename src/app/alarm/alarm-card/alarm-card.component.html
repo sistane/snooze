@@ -1,0 +1,6 @@
+
+<mat-card class="alarmOn" [ngClass]="{'alarmOff' : alarmToggle === false, 'todayscard' : istoday===true}">
+    <h3>{{day}}</h3> 
+        <mat-slide-toggle  [checked]="true" [color]="'primary'" (change)="alarmToggle = ! alarmToggle">{{time}}</mat-slide-toggle>
+
+    </mat-card>

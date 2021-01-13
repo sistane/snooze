@@ -1,33 +1,47 @@
 
 
 .card{
-    height:50px;
-    width: 50px;
-    background-image: url('src\assets\kllk.png');
-    /* background-color: aqua ; */
+    height: 200px;
+    /* width: 150px; */
+	border-radius: 15px;
+	width: 200px ;
+    /* background-image: url('src\assets\kllk.png'); */
+	background: rgba(0, 0, 0, 0.5);
+	
     
 }
 
+.canvas
+{
+    height: 100px !important;
+    width: 200px !important;
+		/* margin-left: -40px !important; */
+	/* to centre element inside the card */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 .cardspacing{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    
+}
+
+.marginleftsmall{
+    margin-left: 10px;
 }
 
 .cardheightspacinghome
 {
-    height: 100%;
+    padding-bottom: 50px;
+    padding: 20px;
     align-items: center;
 }
 .card1
 {   height:60px;
     width: 60px;
     background-image: url('src\assets\kllk.png');
-}
-
-.ads_sponsors div img{
-	width:200px;
-	height:150px;
 }
 
  body {
@@ -38,20 +52,21 @@
 	 background: #f8f8f8;
 }
  h3 {
-	 text-align: center;
-	 margin: 6% auto;
-	 font-size: 1.8rem;
-	 font-weight: 800;
+     text-align: left;
+     
+     margin: 20px ;
+     margin-bottom: 0px !important;
+	 font-size: 1rem;
+	 font-weight: 500;
 	 color: #444;
 }
  .slider {
 	 display: flex;
-	 height: 350px;
+	 height: 165px;
 	 max-height: auto;
 	 overflow-y: hidden;
 	 overflow-x: scroll !important;
-	 padding: 16px;
-	 /* transform: scroll(calc(var(--i,0)/var(--n)*-100%)); */
+	 padding: 5px;
 	 scroll-behavior: smooth;
 }
  .slider::-webkit-scrollbar {
@@ -77,8 +92,8 @@
 	 position: relative;
 }
  .slide img {
-	 height: 100%;
-	 width: 250px;
+	 height: 150px;
+	 width: 150px;
 	 margin: 0 10px;
 	 object-fit: cover;
 	 border-radius: 15px;
@@ -153,3 +168,62 @@
 		 top: 37%;
 	}
 }
+
+.top-left {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: azure;
+  }
+  
+  .Maincards img {
+    height: 200px;
+    width: 150px;
+    margin: 0 10px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+  }
+
+  /* for home card text sleep time*/
+  .p1 {
+    font-size: 9px;
+    width: 90px;
+    height: 60px;
+    margin: -2;
+    margin-left: -20px;
+    margin-top: 4px;
+    padding: 0;
+	display: inline;
+	color: rgb(255, 255, 255);
+  }
+  
+  /* for home card text sleep time*/
+  h3 {
+	font-size: 12px;
+	width: 50%;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	color: rgb(255, 255, 255) !important;
+  }
+  
+/* for home alarm card */
+  .circle {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	border-radius: 50%;
+	font-size: 12px;
+	color: #fff;
+	text-align: center !important;
+	background: #000;
+	/* to center element inside the card */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	  }
+ 
