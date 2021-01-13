@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "snooze"
+  "defaultProject": "snooze",
+  "cli": {
+    "analytics": false
+  }
 }
