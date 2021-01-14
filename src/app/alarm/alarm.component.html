@@ -1,3 +1,17 @@
+
+<mat-toolbar class="toolbar">
+    <button class="backButton mat-icon-button text-white" (click)="navigateToBack()">
+        <mat-icon mat-icon-button>chevron_left</mat-icon>
+    </button>
+    <p class="margin-remove-bottom text-white">Alarm</p>
+    <button class="backButton mat-icon-button text-white" (click)="navigateToSettings()">
+        <mat-icon mat-icon-button>settings</mat-icon>
+    </button>
+</mat-toolbar>
+<div class="description">
+    <p class="margin-remove-bottom text-white description-text">Set daily alarms and use the ring vibrate feature to wake up in your lightest sleep stage</p>
+</div>
+
 <div class="alarmAlign">
     <app-alarm-card  [day]="'Monday'" [time]="'9.30 AM'"></app-alarm-card>
     <app-alarm-card  [day]="'Tuesday'" [time]="'9.30 AM'"></app-alarm-card>
@@ -6,16 +20,6 @@
     <app-alarm-card  [day]="'Friday'" [time]="'9.30 AM'"></app-alarm-card>
     <app-alarm-card  [day]="'Saturday'" [time]="'9.30 AM'"></app-alarm-card>
     <app-alarm-card  [day]="'Sunday'" [time]="'9.30 AM'"></app-alarm-card>
-    
-
-    <div>
-        <input [ngxTimepicker]="toggleTimepicker" [disableClick]="true" readonly>
-        <ngx-material-timepicker-toggle [for]="toggleTimepicker">
-        </ngx-material-timepicker-toggle>
-        <ngx-material-timepicker #toggleTimepicker>
-        </ngx-material-timepicker>
-    </div>
-
     <app-alarm-card  [day]="'Sunday'" [time]="'9.30 AM'"></app-alarm-card>
 
 </div>

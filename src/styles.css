@@ -2,3 +2,35 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.backGround{
+    background-size: cover;
+    background-position: center;
+    background-image:url('/../assets/backGroundImage.jpeg');
+}
+
+.home-heading{
+    text-align: left;
+    font: normal normal bold 18px/24px Roboto;
+    letter-spacing: 0px;
+    font-weight: 700 !important;
+    color: #ffffff;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.body-Heading{
+    text-align: left;
+    font: normal normal bold 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+}
+.body-SubHeading{
+    font: normal normal normal 12px/14px Roboto;
+    color: #6C7680;
+}
+.margin-remove-bottom{
+    margin-bottom: 0px !important;
+}
+.fullContainer{
+    height: 100% !important;
+}

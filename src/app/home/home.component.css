@@ -13,19 +13,20 @@
 
 .canvas
 {
-    height: 100px !important;
-    width: 200px !important;
-		/* margin-left: -40px !important; */
-	/* to centre element inside the card */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	position: relative;
+	height: 100px !important;
+	width: auto !important;
+	left: -30%;
 }
 .cardspacing{
     display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
+	padding-bottom: 12px;
     
+}
+.welcome-card{
+	display: flex;
+    justify-content: center;
 }
 
 .marginleftsmall{
@@ -34,9 +35,11 @@
 
 .cardheightspacinghome
 {
-    padding-bottom: 50px;
+    padding-bottom: 0px !important;
     padding: 20px;
-    align-items: center;
+	align-items: center;
+	height: 100%;
+	overflow: scroll;
 }
 .card1
 {   height:60px;
@@ -53,7 +56,6 @@
 }
  h3 {
      text-align: left;
-     
      margin: 20px ;
      margin-bottom: 0px !important;
 	 font-size: 1rem;
@@ -88,8 +90,7 @@
 	 box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
 }
  .slide {
-
-	 position: relative;
+	position: relative;
 }
  .slide img {
 	 height: 150px;
@@ -156,7 +157,7 @@
 		 padding: 0;
 	}
 	 .slide {
-		 padding: 16px 10px;
+		 padding-right: 10px;
 	}
 	 .slide img {
 		 margin: 0;
