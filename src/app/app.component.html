@@ -1,51 +1,47 @@
 <!-- <app-home></app-home> -->
 <!-- <app-journal></app-journal> -->
-<div class="background">
 <router-outlet></router-outlet>
 
 <mat-toolbar class="toolbar">
-    <a routerLink="/home">
+    <a routerLink="/home" class="text-white">
         <div class="flex-container">
             <button mat-icon-button aria-label="home">
                 <mat-icon>home</mat-icon>
-                    </button>
+            </button>
             <span>Home</span>
         </div>
     </a>
-    <a routerLink="/journal">
+    <a routerLink="/journal" class="text-white">
         <div class="flex-container">
             <button mat-icon-button aria-label="Journal">
                 <mat-icon>bedtime</mat-icon>
-                    </button>
+            </button>
             <span>Journal</span>
-       </div>
+        </div>
     </a>
-    <a routerLink="/alarm">
+    <a routerLink="/alarm" class="text-white">
         <div class="flex-container">
             <button mat-icon-button aria-label="Alarm">
                 <mat-icon>alarm</mat-icon>
-                    </button>
+            </button>
             <span>Alarm</span>
         </div>
     </a>
 
-    <a routerLink="/resources">
+    <a routerLink="/resources" class="text-white">
         <div class="flex-container">
             <button mat-icon-button aria-label="Resources">
                 <mat-icon>library_music</mat-icon>
-                    </button>
+            </button>
             <span>Resources</span>
         </div>
     </a>
-    <a routerLink="/settings">
-        <div class= "flex-container">
+    <a routerLink="/settings" class="text-white">
+        <div class="flex-container">
             <button mat-icon-button aria-label="settigns">
                 <mat-icon>settings</mat-icon>
             </button>
             <span>Settings</span>
-        </div>  
+        </div>
     </a>
-
-   
 </mat-toolbar>
-</div>

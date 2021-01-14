@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-alarm',
@@ -7,12 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlarmComponent implements OnInit {
 
-  constructor() { }
-
-
-
+  constructor(private route:Router) { }
   
   ngOnInit(): void {
+  }
+  navigateToBack(){
+    this.route.navigateByUrl('/home')
+  }
+  navigateToSettings(){
+    this.route.navigateByUrl('/settings')
   }
 
 }

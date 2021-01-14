@@ -1,16 +1,23 @@
 <div class="cardheightspacinghome">
 
+  <div class="welcome-card">
+    <p class="home-heading">Good Evening Benjamin</p>
+  </div>
+
   <div class="cardspacing">
     <mat-card class="card">
-      <div style="display: flex;">
-        <h3>SLEEP</h3>
-        <p class="p1">11.30 PM - 6.30 AM</p>
+      <div>
+        <p class="body-Heading">Sleep</p>
+        <p class="body-SubHeading">11.30 PM - 6.30 AM</p>
       </div>
 
-      <div style="display: block;">
+      <div>
         <canvas baseChart class="canvas" [data]="doughnutChartData" [labels]="doughnutChartLabels"
           [chartType]="doughnutChartType" [options]="barChartOptions">
         </canvas>
+      </div>
+      <div>
+
       </div>
     </mat-card>
 
@@ -22,16 +29,10 @@
   </div>
 
 
-  <h3>Recently Played</h3>
-  <div id="slider-container" class="slider">
-    <!-- <div class="control-prev-btn">
-      <button (click)="prev()" mat-icon-button>
-        <mat-icon>keyboard_arrow_left</mat-icon>
-      </button>
-    </div> -->
 
+  <p class="home-heading">Favourites</p>
+  <div id="slider-container" class="slider">
     <div class="slide">
-      <div class="top-left">XXXXX</div>
       <img
         src="https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=20"
         alt="">
@@ -56,26 +57,12 @@
         src="https://images.unsplash.com/photo-1479981280584-037818c1297d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=20"
         alt="">
     </div>
-
-
-    <div class="control-next-btn">
-      <button (click)="next()" mat-icon-button>
-        <mat-icon>keyboard_arrow_right</mat-icon>
-      </button>
-    </div>
   </div>
-  <div class="overlay"></div>
 
-  <h3>Recently Played</h3>
+  <p class="home-heading">Recently Played</p>
+
   <div id="slider-container" class="slider">
-    <div class="control-prev-btn">
-      <button (click)="prev()" mat-icon-button>
-        <mat-icon>keyboard_arrow_left</mat-icon>
-      </button>
-    </div>
-
     <div class="slide">
-      <div class="top-left">XXXXX</div>
       <img
         src="https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=20"
         alt="">
@@ -95,17 +82,6 @@
         src="https://images.unsplash.com/photo-1574459472673-09bbda49102a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=928&q=20"
         alt="">
     </div>
-
-
-    <div class="control-next-btn">
-      <button (click)="next()" mat-icon-button>
-        <mat-icon>keyboard_arrow_right</mat-icon>
-      </button>
-    </div>
   </div>
   <!-- <div class="overlay"></div> -->
-  <div style="display: block;">
-    <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
-    </canvas>
-  </div>
 </div>

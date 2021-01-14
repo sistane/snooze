@@ -1,6 +1,15 @@
-
-<mat-card class="alarmOn" [ngClass]="{'alarmOff' : alarmToggle === false, 'todayscard' : istoday===true}">
-    <h3>{{day}}</h3> 
-        <mat-slide-toggle  [checked]="true" [color]="'primary'" (change)="alarmToggle = ! alarmToggle">{{time}}</mat-slide-toggle>
-
-    </mat-card>
+<mat-card class="alarmOn"
+    [ngClass]="{'alarmOff' : alarmToggle === false, 'todayscard' : istoday===true}">
+    <h3 class="text-white margin-remove-bottom">{{day}}</h3>
+    <input class="inputTime text-white" [ngxTimepicker]="defaultValue" [value]="'05:11 pm'"  readonly>
+    <ngx-material-timepicker #defaultValue></ngx-material-timepicker>
+    <mat-slide-toggle [checked]="true" [color]="'primary'" (change)="alarmToggle = ! alarmToggle">
+    </mat-slide-toggle>
+</mat-card>
+<!-- <div>
+    <input [ngxTimepicker]="toggleTimepicker" [disableClick]="true" readonly>
+    <ngx-material-timepicker-toggle id="buttonTimePicker" [for]="toggleTimepicker">
+    </ngx-material-timepicker-toggle>
+    <ngx-material-timepicker #toggleTimepicker>
+    </ngx-material-timepicker>
+</div> -->

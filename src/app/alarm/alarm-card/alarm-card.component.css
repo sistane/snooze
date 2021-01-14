@@ -5,29 +5,35 @@
     color: rgb(185, 185, 185);
     border-radius: 20px;
     height: 70px;
-    padding: 1.5rem;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     }
 
-
+.inputTime{
+    background: transparent;
+    color: white;
+    border: none;
+    width: 60px;
+    position: absolute;
+    left: 50%;
+}
 .alarmOff
 {
     opacity: 0.6;
+    background-color: #6C7680;
     border-radius: 20px !important;
     height: 70px !important;
-    padding: 1.5rem;
+
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-
-
-
-    }
+    align-items:center;
+}
 
 .todayscard
 {
-    border:solid darkmagenta;
+    border:3px solid #6C7680;
 }
 
