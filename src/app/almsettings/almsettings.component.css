@@ -1,0 +1,21 @@
+/* for removing background of mat-expansion-panel */
+
+.transparent
+{
+    background:transparent !important;
+    color: white;
+   }
+
+.flex
+{padding: 1.5rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mat-divider
+{
+    border-top-color: white;
+    margin:1rem;
+}
+

@@ -1,0 +1,24 @@
+<!-- testing component for weekview -->
+
+<mat-card class="card">
+    <div class="flex">
+        <div class="column">
+            <p class="subhead">{{day}}</p>
+            <h2 class="whitetext">{{time}}</h2>
+        </div>
+        <div class="flex">
+            <div class="column">
+                <img class="sleepicons" src="assets\Main page\drop-icon.png" alt="">
+                <p class="normalindicators">{{stage1}}</p>
+            </div>
+            <div class="column">
+                <img class="sleepicons" src="assets\Main page\Heart-icon.png" alt="">
+                <p class="normalindicators">{{stage2}}</p>
+            </div>
+        </div>
+
+        <div class="circle">
+            {{score}}
+        </div>
+    </div>
+</mat-card>

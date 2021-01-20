@@ -1,19 +1,24 @@
+.canvas
+{
+	position: relative;
+	
+}
+
 .card{
-    height:50px;
-    width: 50%;
-    background-color: rgb(185, 14, 134)}
+    height: 50%;
+	border-radius: 15px;
+	width: 90% ;
+	background: rgba(0, 0, 0, 0.5);
+}
+.mat-divider
+{
+	border-top-color:greenyellow;
+	border-top-width: 3px !important;
+    width: 100%;
+}
 
-    .mat-grid-tile {
-        /* border: solid 2px #000; */
-        border-radius: 30px;
-        background-color: black;
-        /* background-image: url('src\assets\kllk.png'); */
-        margin-right: 1rem;
-        margin-left: 1rem;
-    }
+.backbutton
+{
+flex-direction: column;
+}
 
-    .tile-image
-    {
-        width:100%;
-        height: auto;
-    }

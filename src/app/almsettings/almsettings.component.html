@@ -1,0 +1,46 @@
+<mat-toolbar class="toptoolbar">
+  <a routerLink="/settings">
+    <button class="mat-icon-button backbutton">
+      <mat-icon mat-icon-button>chevron_left</mat-icon>
+    </button>
+  </a>
+  <h3 class="whitetext toolbarh3">Alarm Settings</h3>
+</mat-toolbar>
+<div class="pagepadding">
+
+  <mat-divider></mat-divider>
+
+  <div class="flex">
+    <p class="whitetext">Ring Vibrate</p>
+    <mat-slide-toggle [checked]="true" [color]="'primary'">
+    </mat-slide-toggle>
+  </div>
+
+  <div class="flex" style="padding-bottom: 0px;">
+    <p class="whitetext">Snooze Length</p>
+  </div>
+
+
+  <div class="flex">
+    <mat-slider #snoozeSlider style="width:100%" class="whitetext"></mat-slider>
+
+    <p class="whitetext">{{snoozeSlider.value}}</p>
+
+  </div>
+
+  <div class="flex" style="padding-bottom: 0px;">
+    <p class="whitetext">Silence after</p>
+  </div>
+
+
+  <div class="flex">
+    <mat-slider #silenceSlider style="width:100%" class="whitetext"></mat-slider>
+
+    <div class="whitetext">{{silenceSlider.value}}</div>
+
+  </div>
+
+
+
+
+</div>

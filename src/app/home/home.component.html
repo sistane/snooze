@@ -1,14 +1,19 @@
+<mat-toolbar class="toptoolbar" style="justify-content: center;">
+  <img src="assets\Main page\logo.png" alt="" style="height: 40px; margin-top:5%">
+
+</mat-toolbar>
+
 <div class="cardheightspacinghome">
 
-  <div class="welcome-card">
-    <p class="home-heading">Good Evening Benjamin</p>
+  <div class="center">
+    <h2 class="whitetext">Good Evening Benjamin</h2>
   </div>
 
   <div class="cardspacing">
     <mat-card class="card">
       <div>
-        <p class="body-Heading">Sleep</p>
-        <p class="body-SubHeading">11.30 PM - 6.30 AM</p>
+        <p class="whitetext">Sleep</p>
+        <p class="whitetext" style="font-size: xx-small; margin-top: -10%;">11.30 PM - 6.30 AM</p>
       </div>
 
       <div>
@@ -16,71 +21,61 @@
           [chartType]="doughnutChartType" [options]="barChartOptions">
         </canvas>
       </div>
-      <div>
 
-      </div>
     </mat-card>
+    <mat-card class="card marginleftsmall" [ngClass]="{'alarmOff' : alarmToggle === false}">
 
-    <mat-card class="card marginleftsmall">
+      <p class="whitetext">Alarm</p>
       <div class="circle">
-        6.30 AM
+        <P style="margin:0px">6.30 AM</P>
+      </div>
+      <div class="toggle">
+        <mat-slide-toggle [checked]="true" [color]="'primary'" (change)="alarmToggle = ! alarmToggle">
+        </mat-slide-toggle>
       </div>
     </mat-card>
+
   </div>
 
 
 
-  <p class="home-heading">Favourites</p>
-  <div id="slider-container" class="slider">
+  <h2 Class="whitetext">Favourites</h2>
+  <div class="slider">
     <div class="slide">
-      <img
-        src="https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=20"
-        alt="">
+      <a routerLink="/naturesound">
+        <img src="assets\Sounds\Nature sounds.png" alt="">
+      </a>
     </div>
     <div class="slide">
-      <img
-        src="https://images.unsplash.com/photo-1574451311232-cb647e9d71f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=20"
-        alt="">
+      <img src="assets\Sounds\sleepy piano.png" alt="">
     </div>
     <div class="slide">
-      <img
-        src="https://images.unsplash.com/photo-1574449423472-4bc6a3d2473d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=20"
-        alt="">
+      <img src="assets\Sounds\classical.png" alt="">
     </div>
     <div class="slide">
-      <img
-        src="https://images.unsplash.com/photo-1574459472673-09bbda49102a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=928&q=20"
-        alt="">
+      <img src="assets\physical\total relaxation.png" alt="">
     </div>
     <div class="slide">
-      <img
-        src="https://images.unsplash.com/photo-1479981280584-037818c1297d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=20"
-        alt="">
+      <img src="assets\meditation\deep breathing.png" alt="">
     </div>
   </div>
 
-  <p class="home-heading">Recently Played</p>
+  <h2 Class="whitetext">Recently Played</h2>
 
-  <div id="slider-container" class="slider">
+  <div class="slider">
     <div class="slide">
-      <img
-        src="https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=20"
-        alt="">
+      <a routerLink="/yogapage">
+        <img src="assets\physical\light stretch.png" alt="">
+      </a>
     </div>
     <div class="slide">
-      <img
-        src="https://images.unsplash.com/photo-1574451311232-cb647e9d71f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=20"
-        alt="">
+      <img src="assets\Sounds\lo-fi beast.png" alt="">
     </div>
     <div class="slide">
-      <img
-        src="https://images.unsplash.com/photo-1574449423472-4bc6a3d2473d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=20"
-        alt="">
+      <img src="assets\Sounds\rainforest sounds.png" alt="">
     </div>
     <div class="slide">
-      <img
-        src="https://images.unsplash.com/photo-1574459472673-09bbda49102a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=928&q=20"
-        alt="">
+      <img src="assets\Sounds\soothing water.png" alt="">
     </div>
   </div>
   <!-- <div class="overlay"></div> -->

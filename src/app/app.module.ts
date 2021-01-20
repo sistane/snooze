@@ -19,8 +19,21 @@ import { ChartsModule } from 'ng2-charts';
 import { AlarmCardComponent } from './alarm/alarm-card/alarm-card.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
-
-
+import { PhysicalpageComponent } from './physicalpage/physicalpage.component';
+import { SoundspageComponent } from './soundspage/soundspage.component';
+import { MeditationComponent } from './meditation/meditation.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+import { NaturesoundsComponent } from './naturesounds/naturesounds.component';
+import { AlmsettingsComponent } from './almsettings/almsettings.component';
+import {MatSliderModule} from '@angular/material/slider';
+import { YogapageComponent } from './yogapage/yogapage.component';
+import { WeekviewComponent } from './weekview/weekview.component';
+import { WeekcompComponent } from './weekcomp/weekcomp.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
+import { WcComponent } from './wc/wc.component';
 
 
 
@@ -32,6 +45,16 @@ import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
     AlarmComponent,
     SettingsComponent,
     AlarmCardComponent,
+    PhysicalpageComponent,
+    SoundspageComponent,
+    MeditationComponent,
+    NaturesoundsComponent,
+    AlmsettingsComponent,
+    YogapageComponent,
+    WeekviewComponent,
+    WeekcompComponent,
+    WcComponent,
+
     
   ],
   imports: [
@@ -48,6 +71,13 @@ import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
     ChartsModule,
     MatSlideToggleModule,
     NgxMaterialTimepickerModule,
+    MatExpansionModule,
+    MatDividerModule,
+    MatListModule,
+    MatSliderModule,
+    MatDatepickerModule,
+    CalendarModule
+
     
          
   ], 

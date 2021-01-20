@@ -1,16 +1,14 @@
 .toolbar
 {
     bottom: 0;
+    position:sticky;
     justify-content: space-between;
     z-index: 10;
     background: #212529;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
-.aligned-with-icon-relative{
-  vertical-align: top;
-  font-size: 1.25em;
-}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -21,9 +19,3 @@
   font-size: 10px;
 }
 
-.background
-{
-  background-size: cover;
-  background-position: center;
-  background-image:url('/../assets/backGroundImage.jpeg');
-}

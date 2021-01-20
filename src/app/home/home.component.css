@@ -2,13 +2,18 @@
 
 .card{
     height: 200px;
-    /* width: 150px; */
 	border-radius: 15px;
 	width: 200px ;
-    /* background-image: url('src\assets\kllk.png'); */
 	background: rgba(0, 0, 0, 0.5);
-	
-    
+	   
+}
+
+.alarmOff
+{opacity: 0.6;
+	height: 200px;
+	border-radius: 15px;
+	width: 200px ;
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .canvas
@@ -75,61 +80,27 @@
 	 width: 150px;
 	 display: none;
 }
- .slider::-webkit-scrollbar-track {
-	 background: transparent;
-}
- .slider::-webkit-scrollbar-thumb {
-	 background: #888;
-}
- .slider::-webkit-scrollbar-thumb:hover {
-	 background: #555;
-}
+
  .slider img:hover {
 	 transform: scale(1.05);
 	 box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
 }
  .slide {
 	position: relative;
-}
+	padding-right: 10px;
+	}
+
  .slide img {
 	 height: 150px;
 	 width: 150px;
-	 margin: 0 10px;
+		 margin: 0;
 	 object-fit: cover;
 	 border-radius: 15px;
 	 cursor: pointer;
 	 transition: .25s ease-in-out;
 }
- .control-prev-btn {
-     position: sticky;
-     z-index: 10;
-	 top: 50%;
-	 left: 0;
-	 background-color: rgba(255,255,255,0.55);
-	 height: 100px;
-	 line-height: 100px;
-	 width: 45px;
-	 text-align: center;
-	 box-shadow: 0 1px 3px #888;
-	 user-select: none;
-	 color: #444;
-	 cursor: pointer;
-}
- .control-next-btn {
-     position: sticky;
-     z-index: 10;
-	 top: 50%;
-	 right: 0;
-	 background-color: rgba(255,255,255,0.55);
-	 height: 100px;
-	 line-height: 100px;
-	 width: 45px;
-	 text-align: center;
-	 box-shadow: 0 1px 3px #888;
-	 user-select: none;
-	 color: #444;
-	 cursor: pointer;
-}
+
+
 .slide img.zoomed{
 	  width: 500px;
     height: 600px;
@@ -138,67 +109,10 @@
     top: 0%;
     z-index: 1000;
 		transform: scale(5) translatey(5) !important; 
+}
 	
-}
-.overlay{
-		position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0,.45);
-    top: 0;
-		display: none;
-}
-.overlay.active{
-	display: block;
-}
- @media only screen and (max-width: 420px) {
-	 .slider {
-		 padding: 0;
-	}
-	 .slide {
-		 padding-right: 10px;
-	}
-	 .slide img {
-		 margin: 0;
-	}
-	 .control-prev-btn {
-		 top: 37%;
-	}
-	 .control-next-btn {
-		 top: 37%;
-	}
-}
 
-.top-left {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    color: azure;
-  }
-  
-  .Maincards img {
-    height: 200px;
-    width: 150px;
-    margin: 0 10px;
-    object-fit: cover;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: .25s ease-in-out;
-  }
-
-  /* for home card text sleep time*/
-  .p1 {
-    font-size: 9px;
-    width: 90px;
-    height: 60px;
-    margin: -2;
-    margin-left: -20px;
-    margin-top: 4px;
-    padding: 0;
-	display: inline;
-	color: rgb(255, 255, 255);
-  }
-  
+ 
   /* for home card text sleep time*/
   h3 {
 	font-size: 12px;
@@ -212,18 +126,28 @@
   
 /* for home alarm card */
   .circle {
-	width: 100px;
-	height: 100px;
-	line-height: 100px;
-	border-radius: 50%;
-	font-size: 12px;
-	color: #fff;
-	text-align: center !important;
-	background: #000;
-	/* to center element inside the card */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	width: 90px;
+    height: 90px;
+    margin-left: 15%;
+    margin-top: 16%;
+    line-height: 10px;
+    border: 5px solid white;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    text-align: center !important;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+	
 	  }
  
+.toggle
+{
+	display: flex;
+	justify-content: center ;
+	bottom:0;
+	position: relative;
+	margin-top: 10%;
+}

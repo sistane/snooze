@@ -3,27 +3,22 @@
     height: 220px;
     /* width: 150px; */
 	border-radius: 15px;
-	width: 180px ;
+	width: 100% ;
     /* background-image: url('src\assets\kllk.png'); */
-    background: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
-	   margin: 10px;
 }
 
 /* for recently played cards */
 .subcard{
     height: 180px;
     /* width: 150px; */	border-radius: 15px;
-    width: 180px ;
+    width: 100% ;
     background-size: cover;
     background-position: center;
-	background: rgba(0, 0, 0, 0.5);
+	
 	   margin: 10px;
 }
-/* for placing 2 cards arranged in rows */
-.rows
-{
-    display: flex;
-    justify-content: space-between;
-}
+
+
+ 

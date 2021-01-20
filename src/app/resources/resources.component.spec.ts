@@ -23,3 +23,4 @@ describe('ResourcesComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

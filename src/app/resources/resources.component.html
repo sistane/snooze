@@ -1,14 +1,49 @@
-<div class="rows">
-    <mat-card class="maincard" style="background-image: url('assets/Main page/Deep breathing.png');"></mat-card>
-    <mat-card class="maincard" style="background-image: url('assets/Main page/sounds.png');"></mat-card>
+<mat-toolbar class="toptoolbar">
+    <a routerLink="/home">
+    <button class="mat-icon-button backbutton white text">
+        <mat-icon mat-icon-button>chevron_left</mat-icon>
+    </button>
+</a>
+    <h3 class="whitetext toolbarh3">Resources</h3>
+
+
+</mat-toolbar>
+<div class="pagepadding" style="padding:.5rem">
+<div class="margin-remove-bottom text-white description-text" style="margin-left:2rem; margin-right: 2rem;">
+    <p>Light exercises or yoga before bedtime helps lower blood pressure which can improve deep. Choose any routine from
+        the list and emerge yourself in a relaxing routine</p>
 </div>
 
-<mat-card class="maincard" style="height: 150px; width: 340px; margin: 10px; background-image: url('assets/Main page/meditation.png');"></mat-card>
-<div class ="rows">
+
+<div class="rows">
+
+    <a style="width: 50%; height: 220px; margin: 10px;" routerLink="/physical">
+        <mat-card class="maincard" style="background-image: url('assets/Main page/physical.png');">
+        </mat-card>
+    </a>
+    <a style="width: 50%; height: 220px; margin: 10px; " routerLink="/sounds">
+        <mat-card class="maincard" style="background-image: url('assets/Main page/sounds.png');"></mat-card>
+    </a>
+
+
+
+</div>
+<div class="center">
+    <a style="width: 100%; height: 150px; margin: 10px; " routerLink="/meditation">
+        <mat-card class="maincard"
+            style="width: 100%; height :inherit; background-image: url('assets/Main page/meditation.png');">
+        </mat-card>
+    </a>
+</div>
+<div class="center">
+    <h3 class="text-white">Recently Played</h3>
+</div>
+<div class="rows">
     <mat-card class="subcard" style="background-image: url('assets/Main page/Deep breathing.png')"></mat-card>
     <mat-card class="subcard" style="background-image: url('assets/Main page/Counting.png')"></mat-card>
 </div>
-<div class ="rows">
+<div class="rows">
     <mat-card class="subcard" style="background-image: url('assets/Main page/gratitude.png')"></mat-card>
     <mat-card class="subcard" style="background-image: url('assets/Main page/low impact pressure.png')"></mat-card>
+</div>
 </div>

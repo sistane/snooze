@@ -1,0 +1,11 @@
+
+/* for cards */
+.subcard{
+    height: 180px;
+    /* width: 150px; */	border-radius: 15px;
+    width: 100% ;
+    background-size: cover;
+    background-position: center;
+	
+	   margin: 10px;
+}

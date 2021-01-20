@@ -18,6 +18,7 @@ export class AlarmComponent implements OnInit {
   navigateToSettings(){
     this.route.navigateByUrl('/settings')
   }
+  
 
 }
 

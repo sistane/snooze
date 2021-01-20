@@ -1,0 +1,36 @@
+<!-- monthly view calendar page -->
+    <div style="min-height: 100vh;">
+        <mat-toolbar class="toptoolbar">
+            <a routerLink="/home">
+                <button class="mat-icon-button backbutton ">
+                    <mat-icon mat-icon-button>chevron_left</mat-icon>
+                </button>
+            </a>
+            <h3 class="whitetext toolbarh3">Journal</h3>
+        </mat-toolbar>
+        <mat-toolbar class="toptoolbar" style="justify-content: space-between;">
+            <a routerLink="/journal">
+                <button class="mat-button backbutton">
+                    <h3 class="whitetext">Day</h3>
+    
+                </button>
+            </a>
+    
+            <a routerLink="/weekview">
+                <button class="mat-button backbutton ">
+                    <h3 class="whitetext">Week</h3>
+                    
+                </button>
+            </a>
+            <a routerLink="/weekcomp">
+                <button class="mat-button backbutton ">
+                    <h3 class="whitetext">Month</h3>
+                    <mat-divider></mat-divider>
+                </button>
+            </a>
+        </mat-toolbar>
+   
+    <div class="center">
+    <ejs-calendar id=calendar [value]='value' > </ejs-calendar >
+    </div>
+    </div>

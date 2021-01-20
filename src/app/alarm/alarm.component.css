@@ -5,23 +5,7 @@
     margin:1rem;
     margin-left: -10 !important;
 }
-.backButton{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.8;
-    color: rgb(185, 185, 185);
-    align-items: center;
-}
-.description{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-}
-.description-text{
-    display: flex;
-    text-align: center;
-}
+
 .todaycard
 {
     display: block;

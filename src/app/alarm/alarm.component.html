@@ -1,56 +1,33 @@
-
 <mat-toolbar class="toolbar">
-    <button class="backButton mat-icon-button text-white" (click)="navigateToBack()">
+    <a routerLink="/home">
+    <button class="backbutton mat-icon-button text-white" >
         <mat-icon mat-icon-button>chevron_left</mat-icon>
     </button>
+</a>
     <p class="margin-remove-bottom text-white">Alarm</p>
-    <button class="backButton mat-icon-button text-white" (click)="navigateToSettings()">
+    <a routerLink="/alarmsettings">
+    <button class="backButton mat-icon-button text-white" style="margin-top: 20px;" >
         <mat-icon mat-icon-button>settings</mat-icon>
     </button>
+</a>
 </mat-toolbar>
-<div class="description">
-    <p class="margin-remove-bottom text-white description-text">Set daily alarms and use the ring vibrate feature to wake up in your lightest sleep stage</p>
-</div>
-
-<div class="alarmAlign">
-    <app-alarm-card  [day]="'Monday'" [time]="'9.30 AM'"></app-alarm-card>
-    <app-alarm-card  [day]="'Tuesday'" [time]="'9.30 AM'"></app-alarm-card>
-    <app-alarm-card  [day]="'Wednesday'" [time]="'9.30 AM'"></app-alarm-card>
-    <app-alarm-card  [day]="'Thursday'" [time]="'9.30 AM'"></app-alarm-card>
-    <app-alarm-card  [day]="'Friday'" [time]="'9.30 AM'"></app-alarm-card>
-    <app-alarm-card  [day]="'Saturday'" [time]="'9.30 AM'"></app-alarm-card>
-    <app-alarm-card  [day]="'Sunday'" [time]="'9.30 AM'"></app-alarm-card>
-    <app-alarm-card  [day]="'Sunday'" [time]="'9.30 AM'"></app-alarm-card>
-
-</div>
-
-<!-- <div class="ngx-timepicker-field-example">
-    <ngx-timepicker-field [defaultTime]="'11:11 am'"></ngx-timepicker-field>
-    <ngx-material-timepicker #defaultValue></ngx-material-timepicker>
-</div> -->
-
-<!-- <div class="custom-theme-example">
-    <input placeholder="Custom theme" aria-label="Custom theme"
-        [ngxTimepicker]="darkPicker" readonly>
-    <ngx-material-timepicker #darkPicker ></ngx-material-timepicker>
- </div> -->
+    <div style="margin:2rem;">
+        <p class="margin-remove-bottom text-white description-text">Set daily alarms and use the ring vibrate feature to
+            wake up in your lightest sleep stage</p>
+    </div>
 
 
- <!-- <div class="toggle-custom-icon-example">
-    <input [ngxTimepicker]="toggleIcon" [disableClick]="true" readonly>
-    <ngx-material-timepicker-toggle [for]="toggleIcon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px" ngxMaterialTimepickerToggleIcon>
-            <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M16,16H7.995 C7.445,16,7,15.555,7,15.005v-0.011C7,14.445,7.445,14,7.995,14H14V5.995C14,5.445,14.445,5,14.995,5h0.011 C15.555,5,16,5.445,16,5.995V16z"/>
-        </svg>
-    </ngx-material-timepicker-toggle>
-    <ngx-material-timepicker #toggleIcon></ngx-material-timepicker>
+    <!-- alarm page cards using component app-alarm-card -->
+    <div class="alarmAlign">
+        <app-alarm-card [day]="'Monday'" [time]="'9.30 AM'"></app-alarm-card>
+        <app-alarm-card [day]="'Tuesday'" [time]="'9.30 AM'"></app-alarm-card>
+        <app-alarm-card [day]="'Wednesday'" [time]="'9.30 AM'"></app-alarm-card>
+        <app-alarm-card [day]="'Thursday'" [time]="'9.30 AM'"></app-alarm-card>
+        <app-alarm-card [day]="'Friday'" [time]="'9.30 AM'"></app-alarm-card>
+        <app-alarm-card [day]="'Saturday'" [time]="'9.30 AM'"></app-alarm-card>
+        <app-alarm-card [day]="'Sunday'" [time]="'9.30 AM'"></app-alarm-card>
+        <app-alarm-card [day]="'Sunday'" [time]="'9.30 AM'"></app-alarm-card>
 
-</div> -->
-
-<!-- <div class="toggle-example">
-    <input [ngxTimepicker]="toggleTimepicker" [disableClick]="true" readonly>
-    <ngx-material-timepicker-toggle [for]="toggleTimepicker"></ngx-material-timepicker-toggle>
-    <ngx-material-timepicker #toggleTimepicker></ngx-material-timepicker>
-</div> -->
+    </div>
 
 

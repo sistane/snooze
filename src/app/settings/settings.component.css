@@ -1,0 +1,52 @@
+/* for removing background of mat-expansion-panel */
+
+.transparent
+{
+    background:transparent !important;
+    color: white;
+   }
+
+
+
+
+
+.flex
+{padding: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mat-divider
+{
+    border-top-color: white;
+    margin:1rem;
+}
+
+.fa-facebook {
+    /* background: #3B5998; */
+    color: white;
+  }
+  
+  .fa-twitter {
+    /* background: #55ACEE; */
+    color: white;
+  }
+
+  .fa-instagram {
+    /* background: #125688; */
+    color: white;
+  }
+
+  .fa {
+   
+       font-size: 20px;
+    width: 35px;
+    height:35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+  }

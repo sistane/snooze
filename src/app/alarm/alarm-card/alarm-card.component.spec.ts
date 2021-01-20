@@ -23,3 +23,4 @@ describe('AlarmCardComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

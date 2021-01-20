@@ -3,7 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .backGround{
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-image:url('/../assets/backGroundImage.jpeg');
 }
@@ -33,4 +33,132 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 .fullContainer{
     height: 100% !important;
+}
+
+.whitetext
+{
+    color: white;
+}
+
+.toptoolbar
+{
+    top:0;
+    position: relative;
+      z-index: 10;
+    background: transparent;
+ 
+}
+
+.toolbarh3
+{
+    display: flex;
+    left: 0;
+    /* position: absolute; */
+    width: 75%;
+     justify-content: center
+ 
+}
+
+.backbutton{
+    display: flex !important;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    color: rgb(185, 185, 185);
+    align-items: center;
+}
+
+.timepicker__header{
+    background-color: rgb(44, 41, 41) !important;
+}
+.clock-face__clock-hand {
+    background-color: rgb(0, 0, 0) !important;
+}
+/* .clock-face__clock-hand::after {
+    background-color: rgb(0, 0, 0) !important;
+}
+.clock-face__clock-hand::before {
+    background-color: rgb(0, 0, 0) !important;
+} */
+.clock-face__number > span.active {
+    background-color: rgb(0, 0, 0) !important;  
+}
+.timepicker__main-content{
+    --body-background-color:rgba(0, 0, 0, 0.76) !important;
+}
+.timepicker-button{
+    color: rgb(247, 247, 247) !important;
+}
+
+.clock-face
+{
+    background-color:rgb(44, 41, 41) !important;
+}
+
+/* Center */
+.center
+{
+    display: flex;
+    justify-content: center;
+ }
+
+ /* for rows placing 2 card evenly in a row*/
+
+ .rows
+ {
+   display: flex;
+   justify-content: space-between;  
+ }
+
+
+.description-text{
+    display: flex;
+    text-align: center;
+}
+
+.mat-expansion-indicator::after
+{
+    color: white !important;
+}
+
+/* to increase the size of the page to 100% view port */
+.pagepadding
+{
+min-height: 100vh;
+padding:.25rem;
+}
+
+
+/* styles for mat slider */
+
+.mat-accent .mat-slider-thumb, .mat-accent .mat-slider-thumb-label, .mat-accent .mat-slider-track-fill {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+/* Styles for calendar  */
+.e-calendar
+{
+    background: border-box;
+    max-width: 340px!important;
+    
+}
+
+.e-calendar th
+{
+    color: rgb(182, 190, 164);
+}
+
+.e-header span
+{
+    color: rgb(182, 190, 164) !important;
+}
+
+.e-btn.e-flat.e-primary, .e-css.e-btn.e-flat.e-primary
+{
+    color: rgb(182, 190, 164) !important;
+}
+
+.e-day
+{
+    color: white !important;
 }
