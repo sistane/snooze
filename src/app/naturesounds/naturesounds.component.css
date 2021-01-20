@@ -18,8 +18,8 @@
 }
 
 .backGround {
-    background-image:url('/../assets/Sounds/Nature sounds.png') !important;
-    
+    /* background-image:url('/../assets/Sounds/Nature sounds.png') !important; */
+    /* background-color: #4d841d; */
     background-size: cover !important;
     height: 100vh;
     background-position: center;
